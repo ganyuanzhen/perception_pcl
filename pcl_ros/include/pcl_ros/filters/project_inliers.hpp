@@ -79,12 +79,12 @@ private:
 
   typedef message_filters::sync_policies::ApproximateTime<
       PointCloud2, PointIndices, ModelCoefficients> SyncApproxPolInputIndicesModel;
-  typedef message_filters::Synchronizer<SyncApproxPolInputIndicesModel> 
+  typedef message_filters::Synchronizer<SyncApproxPolInputIndicesModel>
     SynchronizerApproxInputIndicesModel;
 
   typedef message_filters::sync_policies::ExactTime<
       PointCloud2, PointIndices, ModelCoefficients> SyncExactPolInputIndicesModel;
-  typedef message_filters::Synchronizer<SyncExactPolInputIndicesModel> 
+  typedef message_filters::Synchronizer<SyncExactPolInputIndicesModel>
     SynchronizerExactInputIndicesModel;
 
   /** \brief Synchronized input, indices, and model coefficients.*/
